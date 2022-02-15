@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,400&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+            list-style-type: none;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        /* shared */
+        .flex-item {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .hotline {
+            height: 40px;
+            line-height: 40px;
+        }
+
+        .help {
+            line-height: 40px;
+        }
+
+        .hotline span {
+            font-weight: 700;
+            color: rgb(30, 30, 167)
+        }
+
+        .space {
+            padding-left:20px;
+           margin-right:20px;
+            border-right: 2px solid rgb(218, 216, 216);
+        }
+
+        .header {
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        #menu {
+            height: 60px;
+
+            line-height: 60px;
+            padding: 0 150px;
+            background-color: #290076;
+        }
+
+        #menu li>a {
+            color: #fff;
+        }
+
+        #menu button {
+            margin: 10px 0;
+            display: flex;
+            justify-content: space-between;
+            height: 38px;
+            align-items: center;
+            background-color: #3ADFFB;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 14px;
+            color: #000;
+            border: none;
+            padding: 6px;
+            width: 180px;
+
+        }
+
+        #menu button:hover {
+            opacity: 0.8;
+
+            cursor: pointer;
+        }
+
+        .help__icon {
+            font-size: 20px;
+            margin: auto 5px;
+            color: blue;
+        }
+
+        .contact {
+            margin: 0 150px;
+
+        }
+
+        #menu a>img {
+            height: 40px;
+            margin: 8px;
+
+        }
+
+        #nav {
+            height: 60px;
+            background-color: #EBEFF2;
+            line-height: 60px;
+            padding: 0 150px;
+        }
+
+        #nav li {
+            padding: 0 10px;
+        }
+
+        #nav li>a {
+            color: #000;
+        }
+
+        .nav__icon {
+            font-size: 24px;
+            margin: auto 0;
+        }
+
+        .banner {
+            max-width: 67%;
+            margin-right: 30px;
+        }
+
+        .banner img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .new-item img {
+            width: 80px;
+            height: 80px;
+            margin-right: 10px;
+            margin-left: 0;
+        }
+
+        .main-content {
+            justify-content: center;
+            margin: 60px 150px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        #form {
+            margin-top: 10px;
+            width: 100%;
+            border: 1px solid #4e70b9;
+            height: 39%;
+            background-color: #F7F8FA;
+        }
+
+        #form h3 {
+            text-align: center;
+            margin: 10px auto;
+        }
+
+        #form input::placeholder {
+            padding: 0 10px;
+        }
+
+        #form input,
+        #form button {
+            display: block;
+            width: 80%;
+            height: 43px;
+            margin: 19px auto;
+            align-items: center;
+
+        }
+
+        #form button {
+            background-color: #4D7FFC;
+            color: #fff;
+            border: none;
+            font-size: 16px;
+            display: flex;
+            justify-content: space-between;
+            padding: 5px 10px;
+        }
+
+        .new h3 {
+            margin: 30px 0;
+            font-size: 27px;
+        }
+
+        .new-item {
+            margin: 10px 0;
+
+        }
+
+        .color-blue {
+            color: #4D7FFC;
+            font-size: 12px;
+            margin: 5px 0;
+        }
+
+        .new-item p {}
+
+        .bold {
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        #menu li>a:hover {
+            color: rgb(101, 126, 238);
+
+        }
+
+        .line {
+            width: 100%;
+            border-bottom: 2.4px solid rgba(7, 101, 224, 0.897);
+          
+        }
+        #nav .active{
+            color:rgba(7, 101, 224, 0.897);
+        }
+        #form button:hover{
+            opacity: 0.8;
+            cursor: pointer;
+        }
+        .new-text:hover{
+            color:#4D7FFC;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="contact flex-item">
+                <div class="hotline flex-item">
+                    <p>Hotline:</p>
+                    <span>1900 63 64 65</span>
+                    <p class="space"></p>
+                    <p>Hotline:</p>
+                    <span>1900 63 64 65</span>
+                </div>
+                <div class="help flex-item">
+                    <ion-icon class="help__icon" name="help-circle-outline"></ion-icon>
+                    <span>Trung tâm trợ giúp</span>
+                    <p class="space"></p>
+                    <ion-icon class="help__icon" name="person-outline"></ion-icon>
+                    <p>Đăng nhập / Đăng kí</p>
+                </div>
+            </div>
+
+            <div class="navigation">
+                <ul id="menu" class="flex-item">
+                    <li><a href="">
+                            <img src="./img/logo-home-top.png" alt="">
+                        </a> </li>
+                    <li><a href="">Gải pháp</a></li>
+                    <li><a href="">Case Study</a></li>
+                    <li><a href="">B2B Martech Blog</a></li>
+                    <li><a href="">Cẩm nang triển khai</a></li>
+                    <li><a href="">Tuyển dụng</a></li>
+                    <li><button>Dùng thử ngay <ion-icon name="arrow-forward-outline"></ion-icon></button></li>
+                </ul>
+                <ul id="nav" class="flex-item">
+                    <div class="nav flex-item">
+                        <li ><a class="active" href="">Kiến thức cơ bản </a>
+                            <p class="line"></p>
+                        </li>
+                        <li><a href="">Blog công nghệ</a></li>
+                        <li><a href="">Báo trí về chúng tôi</a></li>
+                        <li><a href="">Tin tức</a></li>
+                        <li><a href="">Thông tin sản phẩm</a></li>
+                    </div>
+                    <ion-icon class="nav__icon" name="search-outline"></ion-icon>
+                </ul>
+            </div>
+        </div>
+        <div class="main-content flex-item">
+            <div class="banner">
+                <img src="./img/layout.jpg" alt="">
+            </div>
+            <div class="content-item">
+                <form action="" id="form">
+                    <h3>Đăng kí nhận bảng tin</h3>
+                    <input type="text" placeholder="Nhập email của bạn">
+                    <button>Gửi yêu cầu <ion-icon name="arrow-forward-outline"></ion-icon></button>
+                </form>
+                <div class="new">
+                    <h3>Tin tức nổi bật</h3>
+                    <div class="new-item flex-item">
+                        <img src="./img/chatbot.jpg" alt="">
+                        <div class="new-text">
+                            <p class="color-blue">CHATBOX</p>
+                            <p class="bold">Marketing đau đầu chọn chatbox hiệu quả: Chuyên gia gợi ý 55...</p>
+                        </div>
+                    </div>
+                    <div class="new-item flex-item">
+                        <img src="./img/email.jpg" alt="">
+                        <div class="new-text">
+                            <p class="color-blue">EMAIL MARKETING</p>
+                            <p class="bold">
+                                Khai thác hiệu quả cơ bản từ các tiến bộ công nghệ...
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

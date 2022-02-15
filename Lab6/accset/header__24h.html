@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Encode+Sans&family=Montserrat:ital,wght@0,500;1,400&family=Pattaya&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./fontawesome-free-6.0.0-beta3-web/css/all.min.css">
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .navigation{
+        background-color: #78B43D;
+      height: 50px;
+    }
+    .navigation ul li{
+        list-style: none;
+        height: 50px;
+    }
+    .nav__header{
+        display:flex;
+        justify-content:space-between;
+        width: 900px;
+        margin: 0 auto;
+    }
+    #menu{
+        display: flex;
+        align-items:center;
+    }
+    .logo-main{
+      padding-top: 4px;
+    }
+    #menu li a{
+        width: 100%;
+        display: inline-block;
+       min-width: 60px;
+        text-decoration: none;
+        padding: 0 3px;
+        color: #fff;
+        font-size: 10px;
+        text-transform: uppercase;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        text-align: center;
+    }
+    #menu i{
+        font-size: 18px;
+        padding: 7px 0;
+    }
+    .border-right{
+        border-right: 1px solid rgb(206, 206, 206);
+        padding: 0 8px;
+    }
+    .search{
+        display: flex;
+        align-items: center;
+        padding: 0 8px;
+        border-left: 1px solid rgb(206, 206, 206);
+        border-right: 1px solid rgb(206, 206, 206);
+    }
+    .icon--search{
+        font-size: 24px;
+        align-items:center;
+        color: #fff;
+     
+    }
+</style>
+<body>
+    <div class="container">
+        <header class="navigation">
+            <nav class="nav__header">
+                <ul id="menu">
+                    <li class="border-right"><a href="">
+                            <img class="logo-main" src="./logo.png" alt="">
+                        </a></li>
+                    <li class="border-right"><a href="">
+                            <i class="fas fa-bars"></i>
+                            <p>Danh mục</p>
+                        </a></li>
+                    <li><a href="">
+                            <i class="far fa-futbol"></i>
+                            <p>Bóng đá</p>
+                        </a></li>
+                    <li><a href="">
+                            <i class="fas fa-chart-line"></i>
+                            <p>Kinh doanh</p>
+                        </a></li>
+                    <li><a href="">
+                            <i class="fas fa-heartbeat"></i>
+                            <p>Sức khỏe</p>
+                        </a></li>
+                    <li><a href="">
+                            <i class="fas fa-shield-virus"></i>
+                            <p>Covid-19</p>
+                        </a></li>
+                    <li><a href="">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                            <p>Hi-tech</p>
+                        </a></li>
+                    <li><a href="">
+                        <i class="fas fa-globe-americas"></i>
+                            <p>Thế giới</p>
+                        </a></li>
+                    <li><a href="">
+                            <i class="fas fa-running"></i>
+                            <p>Thể thao</p>
+                        </a></li>
+                    <li><a href="">
+                            <i class="fab fa-wolf-pack-battalion"></i>
+                            <p>Ngoại hạng anh</p>
+                        </a></li>
+                    <li><a href="">
+                            <i class="fab fa-wolf-pack-battalion"></i>
+                            <p>Xuân 2022</p>
+                        </a></li>
+                    <li><a href="">
+                            <i class="far fa-calendar-alt"></i>
+                            <p>Xem Lịch</p>
+                        </a></li>
+                </ul>
+                <div class="search">
+                    <ion-icon class="icon--search" name="search-outline"></ion-icon>
+                </div>
+            </nav>
+        </header>
+    </div>
+</body>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</html>

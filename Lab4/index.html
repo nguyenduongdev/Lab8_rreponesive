@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,400&family=Roboto:wght@300&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Encode+Sans&family=Montserrat:ital,wght@0,500;1,400&family=Roboto:wght@300&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="iphone">
+            <header>
+                <section class="logo">
+                    <img src="./img/logo2.png" alt="">
+                </section>
+                <nav class="menu ">
+                    <ul id="nav" class="menu__box ">
+                    <ion-icon class="close" name="close-outline"></ion-icon>
+                        <li><a href="#">Home</a> </li>
+                        <li><a href="#">Shop</a></li>
+                        <li><a href="#">Featured</a></li>
+                        <li><a href="#">Pages</a></li>
+                        <li><a href="#">Blogs</a></li> 
+                    </ul>
+                    <div class="overlay"></div>
+
+                    <ion-icon class="nav-menu--btn" name="menu-outline"></ion-icon>                   
+                </nav>
+              
+                <section class="banner">
+                    <img class="banner-img" src="./img/banner2.jpg" alt="">
+                </section>
+            </header>
+            <main>
+                <h2 class="green h2_select">Best Seller</h2>
+                <section class="best-seller ">
+                    <div class="box flex-space">
+                        <article class="seller__item">
+                            <a href=""><img src="./img/product/prd1.png" alt=""></a>
+                            <h4><a href=""> Măng tây</a></h4>
+                            <p class="price">$5.00</p>
+                        </article>
+                        <article class="seller__item">
+                            <a href=""> <img src="./img/product/prd3.png" alt=""></a>
+                            <h4> <a href=""> Cà chua </a> </h4>
+                            <p class="price">$5.00</p>
+                        </article>
+
+                        <article class="seller__item">
+                            <a href=""> <img src="./img/product/prd4.png" alt=""></a>
+                            <h4><a href=""> Ớt chuông</a></h4>
+                            <p class="price">$6.00</p>
+                        </article>
+                        <article class="seller__item">
+                            <a href=""><img src="./img/product/prd2.png" alt=""></a>
+                            <h4><a href="">Gừng</a> </h4>
+                            <p class="price">$15.00</p>
+                        </article>
+
+                    </div>
+                </section>
+                <section class="news ">
+                    <div class="box flex-space">
+                        <div class="news__img">
+                            <a href=""> <img src="./img/product/prd9.jpg" alt=""></a>
+                        </div>
+                        <div class="news__info vegetables">
+                            <h3 class="green"><a href="">Vegetables are very beneficial for health</a> </h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, sunt expedita odio corrupti distinctio qui. Dolorem quae possimus adipisci explicabo fugiat accusamus soluta quod, vero voluptates laborum eveniet natus laudantium. Fruits and vegetables contain important vitamins, minerals and plant chemicals. minerals
+                            </p>
+                            <button class="btn">Shop now</button>
+
+                        </div>
+                    </div>
+                </section>
+                <section class="news ">
+                    <div class="box flex-space">
+                        <div class="news__info juice">
+                            <h3 class="green"><a href=""> Combine vegetables into juice</a></h3>
+                            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam placeat et tenetur natus quia, recusandae quis, autem nesciunt iure delectus nostrum rerum laboriosam quisquam. Soluta ipsam quas vitae nisi explicabo! Fruits and vegetables contain important vitamins, minerals and plant chemicals. minerals
+                                and
+                                plant chemicals.</p>
+                            <button class="btn">Shop now</button>
+                        </div>
+                        <div class="news__img">
+                            <a href=""><img src="./img/product/instagram10.jpg" alt=""></a>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            <footer class="footer">
+                <h3>Nguyễn Hữu Dương PH19067</h3>
+            </footer>
+        </div>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script>
+    const btn = document.querySelector(".nav-menu--btn");
+    const menu = document.querySelector(".menu");
+const close=document.querySelector(".close");
+    btn.onclick =function(){
+        menu.classList.add("nav-active");
+    }
+    close.onclick =function(){
+        menu.classList.remove("nav-active");
+    }
+</script>
+</body>
+
+</html>

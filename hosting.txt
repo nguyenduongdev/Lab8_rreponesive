@@ -1,0 +1,9 @@
+2 yếu tố:
+- tên (domain): dantri.com.vn, facebook.com
+- hosting (nơi lưu trữ sourcecode)
+GOOGLE  đánh giá cao: .com. .vn, .gov...
+SEO
+http://www.dot.tk/en/index.html?lang=en
+
+cmd :ping banhmiasm.ml 
+tooltip hover hiện text box

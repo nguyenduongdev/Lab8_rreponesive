@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="./fontawesome-free-6.0.0-beta3-web/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Encode+Sans&family=Montserrat:ital,wght@0,500;1,400&family=Pattaya&family=Roboto:wght@300;400&display=swap"
+        rel="stylesheet">
+</head>
+<style>
+    .color {
+        color: #58DC3A;
+    }
+
+    html {}
+
+    .logo img {
+        width: 40px;
+    }
+
+    #header {
+        display: flex;
+        justify-content: space-between;
+        font-family: 'Pattaya', sans-serif;
+    }
+
+    .search--btn {
+        min-width: 100px;
+        margin: 0;
+        font-family: 'Pattaya', sans-serif;
+        background-color: #28A745;
+        color: #fff;
+    }
+
+    .navbar-img {
+        width: 60px;
+    }
+
+    .navbar {
+        color: #fff;
+    }
+
+    .nav-item {
+        text-align: center;
+    }
+
+    .container-fluid {
+        background-color: #58DC3A;
+        align-items: center;
+    }
+
+    .witdh-full {
+        width: 100%;
+    }
+
+    .nav-link {
+        color: #fff !important;
+        font-family: 'Pattaya', sans-serif;
+    }
+
+    .search--input {
+        font-family: 'Pattaya', sans-serif;
+
+    }
+
+    .bgc-green {
+        background-color: #58DC3A !important;
+
+    }
+
+    .watch-now {
+        position: absolute;
+        font-family: 'Pattaya', sans-serif;
+        left: 50%;
+        top: 30px;
+        transform: translateX(-50%);
+        text-align: center;
+        text-shadow: black 0.1em 0.1em 0.2em;
+    }
+
+    .watch-now button {
+        border: 1px solid rgb(235, 235, 235);
+        background-color: transparent;
+        color: #58DC3A;
+        text-shadow: black 0.1em 0.1em 0.2em;
+        border-radius: 3px;
+        height: 40px;
+        width: 100px;
+    }
+
+    .watch-now h3 {
+        color: #58DC3A
+    }
+
+    .slide {
+        position: relative;
+    }
+
+    .bgr-blender {
+        width: 900px;
+        background-image: url(https://i.pinimg.com/736x/2f/60/6a/2f606ad14bf9171e5f41b42a01b4441f.jpg), url(https://sp-ao.shortpixel.ai/client/to_auto,q_glossy,ret_img,w_800,h_834/https://flowershop.com.vn/wp-content/uploads/2020/09/y-nghia-hoa-cuc-hoa-mi-6-min.jpg);
+        padding-top: 20%;
+        background-repeat: no-repeat;
+        background-size: 400px, 100px, cover, contain;
+        background-blend-mode: multiply;
+
+    }
+
+    .cuchoami {
+        height: 300px;
+        width: 300px;
+    }
+
+    .gadient {
+        width: 600px;
+        height: 400px;
+        margin: 0 auto;
+        color:#B3EBFF ,#FBC2EB;
+        background-image: linear-gradient(to bottom right,#B3EBFF ,#FBC2EB);
+    }
+    .gadient2 {
+        width: 600px;
+        height: 400px;
+        margin: 0 auto;
+        color:#B3EBFF ,#FBC2EB;
+        background-image: radial-gradient(blue,#B3EBFF ,#FBC2EB);
+    }
+</style>
+
+<body>
+    <div class="containers">
+        <nav class="bgc-green navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container ">
+                <a class="navbar-brand" href="#">
+                    <img class="navbar-img rounded-circle" src="./image/bong.jpg" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <i class="fas fa-home"></i>
+                            <a class="nav-link active" aria-current="page" href="#">Trang chủ</a>
+                        </li>
+                        <li class="nav-item"><i class="far fa-calendar-alt"></i>
+                            <a class="nav-link " href="#">Lịch thi đấu hôm nay</a>
+                        </li>
+                        <li class="nav-item"><i class="fas fa-globe-americas"></i>
+                            <a class="nav-link" href="#">EURO 2021</a>
+                        </li>
+
+                        <li class="nav-item dropdown"><i class="fas fa-globe-americas"></i>
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Ngoại hạng anh
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li> <a class="dropdown-item" href="#">Giải đấu</a></li>
+                                <li><a class="dropdown-item" href="#">Bảng xếp hạng</a></li>
+
+                                <li><a class="dropdown-item" href="#">Pháp</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><i class="fas fa-film"></i>
+                            <a class="nav-link" href="#">Video</a>
+                        <li class="nav-item"><i class="fas fa-user-friends"></i>
+                            <a class="nav-link" href="#">Bạn đọc</a>
+                        </li>
+                        </li>
+                    </ul>
+
+                    <form class="d-flex">
+                        <input class="form-control me-2 search--input" type="search" placeholder="Nhập từ khóa"
+                            aria-label="Search">
+                        <button class="search--btn btn btn-outline-success" type="submit">Tìm kiếm</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./image/banner1.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./image/banner2.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./image/banner3.jpg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+            <div class="watch-now">
+                <h3 class="title">Xem ngay các trận đấu kinh điển</h3>
+                <button>Xem ngay</button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

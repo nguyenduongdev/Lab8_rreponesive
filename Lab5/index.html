@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Encode+Sans&family=Montserrat:ital,wght@0,500;1,400&family=Pattaya&family=Roboto:wght@300&display=swap"
+        rel="stylesheet">
+</head>
+<style>
+    @font-face {
+        font-family: Noto Sans;
+        src: url(./Noto_Sans/NotoSans-Regular.ttf);
+    }
+
+    @font-face {
+        font-family: pattaya;
+        src: url(./Pattaya/Pattaya-Regular.ttf);
+    }
+
+    .container {
+        font-family: 'Noto Sans', sans-serif;
+    }
+
+    .product {
+        width: 800px;
+        margin: 200px auto;
+
+    }
+
+    .bold {
+        font-weight: bolder;
+
+    }
+
+    p {
+        font-size: 14px;
+        line-height: 1.5;
+        font-weight: 500;
+        word-spacing: 5px;
+    }
+
+    .flex-between {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .description {
+        flex-basis: 37%;
+    }
+
+    .product__img {
+        flex-basis: 30%;
+    }
+
+    .componemt {
+        flex-basis: 32%;
+        font-family: 'pattaya', sans-serif;
+    }
+
+    .componemt img {
+
+        width: 100%;
+    }
+
+    .description h3,
+    .sale {
+        font-family: 'pattaya', sans-serif;
+        text-align: center;
+        color: #C83427;
+        font-size: 40px;
+        font-weight: 500;
+    }
+
+    .componemt h3 {
+        font-size: 24px;
+        font-weight: 200;
+        color: #684D3F;
+    }
+
+    .componemt h3:first-child {
+        font-size: 24px;
+        font-weight: 100;
+        color: #3D7D4E;
+    }
+
+    .price {
+        font-weight: 500;
+        text-decoration: line-through;
+    }
+
+    .product__img {
+        text-align: center;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <section class="product flex-between">
+            <div class="description">
+                <h3>Kleem Organic Vitamin C</h3>
+                <p class="p_top">Organic vitamin C, giúp chống nhăn, lão hóa da, trị vết thâm nám và tàn nhang, cung cấp
+                    <span class="bold">Collagen</span> cho da (đạt hiệu quả cao nhất khi kết hợp với kem dưỡng ẩm)</p>
+                <p>Kem trị nám da được xếp vào Top 10 kem trị nám tốt nhất hiện nay nhờ hiệu quả giảm đóm nám và lão hóa
+                    đến 33% trong 1 tuần, trị sạch nám da tàn nhang từ 4 - 6 tuần sử dụng. Với thành phần <span
+                        class="bold"> Glycolic Acid</span> thẩm sâu vào da giúp ngăn ngừa nám da tái phát.</p>
+            </div>
+            <article class="product__img">
+                <img src="./BAI TAP BUOI 5/1.jpg" alt="">
+                <p class="price">45 USD</p>
+                <p class="sale">32 USD</p>
+            </article>
+            <article class="componemt">
+                <h3>Thành phần</h3>
+                <h3>Organic vitamin C</h3>
+                <h3>Collagen</h3>
+                <h3>Glycolic Acid</h3>
+                <img src="./BAI TAP BUOI 5/2.jpg" alt="">
+            </article>
+        </section>
+    </div>
+
+</body>
+
+</html>
